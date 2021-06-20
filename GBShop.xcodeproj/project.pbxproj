@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F625267CF16D00359582 /* AppDelegate.swift */; };
 		ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F627267CF16D00359582 /* SceneDelegate.swift */; };
-		ECF8F62A267CF16D00359582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F629267CF16D00359582 /* ViewController.swift */; };
-		ECF8F62D267CF16D00359582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62B267CF16D00359582 /* Main.storyboard */; };
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
 		ECF8F632267CF16E00359582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F630267CF16E00359582 /* LaunchScreen.storyboard */; };
 		ECF8F63D267CF16E00359582 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F63C267CF16E00359582 /* GBShopTests.swift */; };
@@ -38,8 +36,6 @@
 		ECF8F622267CF16D00359582 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F625267CF16D00359582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF8F627267CF16D00359582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECF8F629267CF16D00359582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECF8F62C267CF16D00359582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECF8F62E267CF16E00359582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF8F631267CF16E00359582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF8F633267CF16E00359582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +72,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC846522267D0BB800640FFF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECF8F625267CF16D00359582 /* AppDelegate.swift */,
+				ECF8F627267CF16D00359582 /* SceneDelegate.swift */,
+				EC846526267D0C5200640FFF /* Flows */,
+				EC846525267D0C4800640FFF /* Assembly */,
+				EC846524267D0C2B00640FFF /* Entity */,
+				EC846523267D0C0C00640FFF /* BusinessLogic */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EC846523267D0C0C00640FFF /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		EC846524267D0C2B00640FFF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EC846525267D0C4800640FFF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EC846526267D0C5200640FFF /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		EC846527267D0C5D00640FFF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC846528267D0C6700640FFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECF8F62E267CF16E00359582 /* Assets.xcassets */,
+				ECF8F630267CF16E00359582 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC846529267D0C7300640FFF /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				ECF8F633267CF16E00359582 /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
 		ECF8F619267CF16D00359582 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +160,10 @@
 		ECF8F624267CF16D00359582 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
-				ECF8F625267CF16D00359582 /* AppDelegate.swift */,
-				ECF8F627267CF16D00359582 /* SceneDelegate.swift */,
-				ECF8F629267CF16D00359582 /* ViewController.swift */,
-				ECF8F62B267CF16D00359582 /* Main.storyboard */,
-				ECF8F62E267CF16E00359582 /* Assets.xcassets */,
-				ECF8F630267CF16E00359582 /* LaunchScreen.storyboard */,
-				ECF8F633267CF16E00359582 /* Info.plist */,
+				EC846529267D0C7300640FFF /* Environments */,
+				EC846528267D0C6700640FFF /* Resources */,
+				EC846527267D0C5D00640FFF /* Core */,
+				EC846522267D0BB800640FFF /* App */,
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -233,7 +291,6 @@
 			files = (
 				ECF8F632267CF16E00359582 /* LaunchScreen.storyboard in Resources */,
 				ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */,
-				ECF8F62D267CF16D00359582 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF8F62A267CF16D00359582 /* ViewController.swift in Sources */,
 				ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */,
 				ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ECF8F62B267CF16D00359582 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECF8F62C267CF16D00359582 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECF8F630267CF16E00359582 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,6 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -421,6 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -438,7 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R95MV6BG28;
-				INFOPLIST_FILE = GBShop/Info.plist;
+				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R95MV6BG28;
-				INFOPLIST_FILE = GBShop/Info.plist;
+				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
