@@ -3,13 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0AAA3582E12D27A1A0018A8A /* Pods_GBShop_GBShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915475509866721B7759800D /* Pods_GBShop_GBShopUITests.framework */; };
 		5088274E20956A3F1C057445 /* Pods_GBShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA51A10917B79B091BD46D4 /* Pods_GBShop.framework */; };
 		9F5FBC278115937C8678056E /* Pods_GBShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A28F24C3B2F212258189FE /* Pods_GBShopTests.framework */; };
+		EC09652D2683699E0042793C /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09652C2683699E0042793C /* AbstractErrorParser.swift */; };
+		EC09652F26836A240042793C /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09652E26836A240042793C /* ErrorParser.swift */; };
+		EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653026836B430042793C /* CustomDecodableSerializer.swift */; };
+		EC0965332683746A0042793C /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965322683746A0042793C /* AbstractRequestFactory.swift */; };
+		EC0965362683C90A0042793C /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965352683C90A0042793C /* RequestRouter.swift */; };
+		EC0965382683CA9A0042793C /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965372683CA9A0042793C /* LoginResult.swift */; };
+		EC09653A2683CAC80042793C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965392683CAC80042793C /* User.swift */; };
+		EC09653D2683CB0E0042793C /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653C2683CB0E0042793C /* AuthRequestFactory.swift */; };
+		EC09653F2683CBD10042793C /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653E2683CBD10042793C /* Auth.swift */; };
+		EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965402683CC8A0042793C /* RequestFactory.swift */; };
 		ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F625267CF16D00359582 /* AppDelegate.swift */; };
 		ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F627267CF16D00359582 /* SceneDelegate.swift */; };
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
@@ -45,6 +55,16 @@
 		915475509866721B7759800D /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9403A4341AAF2CCA099E1C44 /* Pods-GBShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.release.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		A97598DCC3D3A4B30ECF1439 /* Pods-GBShop-GBShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop-GBShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-GBShop-GBShopUITests/Pods-GBShop-GBShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC09652C2683699E0042793C /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		EC09652E26836A240042793C /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		EC09653026836B430042793C /* CustomDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecodableSerializer.swift; sourceTree = "<group>"; };
+		EC0965322683746A0042793C /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
+		EC0965352683C90A0042793C /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		EC0965372683CA9A0042793C /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		EC0965392683CAC80042793C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC09653C2683CB0E0042793C /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		EC09653E2683CBD10042793C /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		EC0965402683CC8A0042793C /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		ECF8F622267CF16D00359582 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F625267CF16D00359582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF8F627267CF16D00359582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,8 +127,29 @@
 				20F377E34E89721B7C28B9A3 /* Pods-GBShopTests.debug.xcconfig */,
 				9403A4341AAF2CCA099E1C44 /* Pods-GBShopTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC09652B268368CB0042793C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC09652C2683699E0042793C /* AbstractErrorParser.swift */,
+				EC09652E26836A240042793C /* ErrorParser.swift */,
+				EC09653026836B430042793C /* CustomDecodableSerializer.swift */,
+				EC0965322683746A0042793C /* AbstractRequestFactory.swift */,
+				EC0965352683C90A0042793C /* RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC09653B2683CAFA0042793C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC09653C2683CB0E0042793C /* AuthRequestFactory.swift */,
+				EC09653E2683CBD10042793C /* Auth.swift */,
+				EC0965402683CC8A0042793C /* RequestFactory.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		EC846522267D0BB800640FFF /* App */ = {
@@ -127,6 +168,7 @@
 		EC846523267D0C0C00640FFF /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				EC09653B2683CAFA0042793C /* Network */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -134,6 +176,8 @@
 		EC846524267D0C2B00640FFF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EC0965372683CA9A0042793C /* LoginResult.swift */,
+				EC0965392683CAC80042793C /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -155,6 +199,7 @@
 		EC846527267D0C5D00640FFF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EC09652B268368CB0042793C /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -464,8 +509,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */,
+				EC09652D2683699E0042793C /* AbstractErrorParser.swift in Sources */,
 				ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */,
+				EC09653D2683CB0E0042793C /* AuthRequestFactory.swift in Sources */,
+				EC0965362683C90A0042793C /* RequestRouter.swift in Sources */,
 				ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */,
+				EC0965382683CA9A0042793C /* LoginResult.swift in Sources */,
+				EC09653F2683CBD10042793C /* Auth.swift in Sources */,
+				EC09653A2683CAC80042793C /* User.swift in Sources */,
+				EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */,
+				EC0965332683746A0042793C /* AbstractRequestFactory.swift in Sources */,
+				EC09652F26836A240042793C /* ErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
