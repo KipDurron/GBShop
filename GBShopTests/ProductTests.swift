@@ -39,7 +39,7 @@ class ProductTests: XCTestCase {
     func testGetAllProduct() throws {
         
         let productRequestFactory = requestFactory.makeProductRequestFatory()
-        productRequestFactory.getAllProduct { (response: AFDataResponse<ProductStub>) in
+        productRequestFactory.getAllProduct { (response) in
             switch response.result {
             case .success(let products):
                 debugPrint(products)
@@ -54,10 +54,10 @@ class ProductTests: XCTestCase {
     func testGetProductById() throws {
         
         let productRequestFactory = requestFactory.makeProductRequestFatory()
-        productRequestFactory.getProductById { (response: AFDataResponse<ProductStub>) in
+        productRequestFactory.getProductById(id: 0) { (response) in
             switch response.result {
             case .success(let product):
-                debugPrint(products)
+                debugPrint(product)
                 self.expectation.fulfill()
             case .failure(let error):
                 XCTFail()
