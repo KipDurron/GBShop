@@ -20,11 +20,12 @@
 		EC09653D2683CB0E0042793C /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653C2683CB0E0042793C /* AuthRequestFactory.swift */; };
 		EC09653F2683CBD10042793C /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653E2683CBD10042793C /* Auth.swift */; };
 		EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965402683CC8A0042793C /* RequestFactory.swift */; };
+		EC18449B26874D2800E8A027 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */; };
 		ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F625267CF16D00359582 /* AppDelegate.swift */; };
 		ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F627267CF16D00359582 /* SceneDelegate.swift */; };
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
 		ECF8F632267CF16E00359582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F630267CF16E00359582 /* LaunchScreen.storyboard */; };
-		ECF8F63D267CF16E00359582 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F63C267CF16E00359582 /* GBShopTests.swift */; };
+		ECF8F63D267CF16E00359582 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F63C267CF16E00359582 /* LoginTests.swift */; };
 		ECF8F648267CF16E00359582 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F647267CF16E00359582 /* GBShopUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		EC09653C2683CB0E0042793C /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		EC09653E2683CBD10042793C /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		EC0965402683CC8A0042793C /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		ECF8F622267CF16D00359582 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F625267CF16D00359582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF8F627267CF16D00359582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		ECF8F631267CF16E00359582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF8F633267CF16E00359582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF8F638267CF16E00359582 /* GBShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECF8F63C267CF16E00359582 /* GBShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopTests.swift; sourceTree = "<group>"; };
+		ECF8F63C267CF16E00359582 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		ECF8F63E267CF16E00359582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF8F643267CF16E00359582 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F647267CF16E00359582 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
@@ -257,8 +259,9 @@
 		ECF8F63B267CF16E00359582 /* GBShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				ECF8F63C267CF16E00359582 /* GBShopTests.swift */,
+				ECF8F63C267CF16E00359582 /* LoginTests.swift */,
 				ECF8F63E267CF16E00359582 /* Info.plist */,
+				EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -528,7 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF8F63D267CF16E00359582 /* GBShopTests.swift in Sources */,
+				ECF8F63D267CF16E00359582 /* LoginTests.swift in Sources */,
+				EC18449B26874D2800E8A027 /* ResponseCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
