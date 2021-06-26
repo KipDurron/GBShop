@@ -51,7 +51,8 @@ class ResponseCodableTests: XCTestCase {
         AF.request("https://jsonplaceholder.typicode.com/posts/1")
             .responseCodable(errorParser: errorParser) {(response: AFDataResponse<PostStub>) in
                 switch response.result {
-                case .success(_):
+                case .success(let postStud):
+                    debugPrint(postStud)
                     self.expectation.fulfill()
                     break
                 case .failure:
