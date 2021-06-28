@@ -27,8 +27,10 @@ class LoginTests: XCTestCase {
         auth.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
             case .success(let login):
+                debugPrint(login)
                 self.expectation.fulfill()
             case .failure(let error):
+                print(error)
                 XCTFail()
             }
         }

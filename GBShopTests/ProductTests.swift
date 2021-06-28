@@ -45,6 +45,7 @@ class ProductTests: XCTestCase {
                 debugPrint(products)
                 self.expectation.fulfill()
             case .failure(let error):
+                print(error)
                 XCTFail()
             }
         }
@@ -60,6 +61,7 @@ class ProductTests: XCTestCase {
                 debugPrint(product)
                 self.expectation.fulfill()
             case .failure(let error):
+                print(error)
                 XCTFail()
             }
         }
