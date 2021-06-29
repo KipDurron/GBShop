@@ -27,6 +27,7 @@
 		EC1844A32687869400E8A027 /* ProductReqFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A22687869400E8A027 /* ProductReqFactoryRealise.swift */; };
 		EC1844A52687967400E8A027 /* ConcreteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A42687967400E8A027 /* ConcreteProduct.swift */; };
 		EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DB268B88FA00EEB88B /* StandartResponse.swift */; };
+		EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */; };
 		ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F625267CF16D00359582 /* AppDelegate.swift */; };
 		ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F627267CF16D00359582 /* SceneDelegate.swift */; };
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		EC1844A22687869400E8A027 /* ProductReqFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReqFactoryRealise.swift; sourceTree = "<group>"; };
 		EC1844A42687967400E8A027 /* ConcreteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteProduct.swift; sourceTree = "<group>"; };
 		EC6190DB268B88FA00EEB88B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
+		EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUserInfo.swift; sourceTree = "<group>"; };
 		ECF8F622267CF16D00359582 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F625267CF16D00359582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF8F627267CF16D00359582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				EC1844A026877CDD00E8A027 /* Product.swift */,
 				EC1844A42687967400E8A027 /* ConcreteProduct.swift */,
 				EC6190DB268B88FA00EEB88B /* StandartResponse.swift */,
+				EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				EC09652F26836A240042793C /* ErrorParser.swift in Sources */,
 				EC18449F26877BBD00E8A027 /* ProductRequestFactory.swift in Sources */,
 				EC1844A126877CDD00E8A027 /* Product.swift in Sources */,
+				EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
