@@ -25,13 +25,13 @@ class UserRequestFactoryRealise: AbstractRequestFactory {
 }
 
 extension UserRequestFactoryRealise: UserRequestFactory {
-    func changeUserData(user: User, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
-        let requestModel = ChangeUserDataRequestRouter(baseUrl: baseUrl, user: user)
+    func changeUserData(user: User, extraUserInfo: ExtraUserInfo, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
+        let requestModel = ChangeUserDataRequestRouter(baseUrl: baseUrl, user: user, extraUserInfo: extraUserInfo)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func registration(user: User, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
-        let requestModel = RegisterRequestRouter(baseUrl: baseUrl, user: user)
+    func registration(user: User, extraUserInfo: ExtraUserInfo, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
+        let requestModel = RegisterRequestRouter(baseUrl: baseUrl, user: user, extraUserInfo: extraUserInfo)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
@@ -79,14 +79,15 @@ extension UserRequestFactoryRealise {
         let method: HTTPMethod = .get
         let path: String = "registerUser.json"
         let user: User
+        let extraUserInfo: ExtraUserInfo
         var parameters: Parameters? {
             return [
                 "username": user.name,
-                "password": user.password,
-                "email": user.email,
-                "gender": user.gender,
-                "credit_card": user.creditCard,
-                "bio": user.bio
+                "password": extraUserInfo.password,
+                "email": extraUserInfo.email,
+                "gender": extraUserInfo.gender,
+                "credit_card": extraUserInfo.creditCard,
+                "bio": extraUserInfo.bio
             ]
         }
     }
@@ -96,17 +97,18 @@ extension UserRequestFactoryRealise {
         let method: HTTPMethod = .get
         let path: String = "registerUser.json"
         let user: User
+        let extraUserInfo: ExtraUserInfo
         var parameters: Parameters? {
             return [
-                "id_user": 123,
                 "username": user.name,
-                "password": user.password,
-                "email": user.email,
-                "gender": user.gender,
-                "credit_card": user.creditCard,
-                "bio": user.bio
+                "password": extraUserInfo.password,
+                "email": extraUserInfo.email,
+                "gender": extraUserInfo.gender,
+                "credit_card": extraUserInfo.creditCard,
+                "bio": extraUserInfo.bio
             ]
         }
     }
+    
 }
 
