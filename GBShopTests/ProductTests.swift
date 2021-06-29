@@ -45,8 +45,7 @@ class ProductTests: XCTestCase {
                 debugPrint(products)
                 self.expectation.fulfill()
             case .failure(let error):
-                print(error)
-                XCTFail()
+                XCTFail("\(error)")
             }
         }
         wait(for: [expectation], timeout: 10.0)
@@ -61,8 +60,7 @@ class ProductTests: XCTestCase {
                 debugPrint(product)
                 self.expectation.fulfill()
             case .failure(let error):
-                print(error)
-                XCTFail()
+                XCTFail("\(error)")
             }
         }
         wait(for: [expectation], timeout: 10.0)

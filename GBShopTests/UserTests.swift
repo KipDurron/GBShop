@@ -30,7 +30,7 @@ class UserTests: XCTestCase {
                 debugPrint(login)
                 self.expectation.fulfill()
             case .failure(let error):
-                XCTFail(error.errorDescription ?? "error")
+                XCTFail("\(error)")
             }
         }
         wait(for: [expectation], timeout: 10.0)
@@ -44,7 +44,7 @@ class UserTests: XCTestCase {
                 debugPrint(login)
                 self.expectation.fulfill()
             case .failure(let error):
-                XCTFail(error.errorDescription ?? "error")
+                XCTFail("\(error)")
             }
         }
         wait(for: [expectation], timeout: 10.0)
@@ -60,7 +60,7 @@ class UserTests: XCTestCase {
                 debugPrint(result.result)
                 self.expectation.fulfill()
             case .failure(let error):
-                XCTFail(error.errorDescription ?? "error")
+                XCTFail("\(error)")
             }
         }
         wait(for: [expectation], timeout: 10.0)
@@ -76,7 +76,7 @@ class UserTests: XCTestCase {
                 debugPrint(result.result)
                 self.expectation.fulfill()
             case .failure(let error):
-                XCTFail(error.errorDescription ?? "error")
+                XCTFail("\(error)")
             }
         }
         wait(for: [expectation], timeout: 10.0)
