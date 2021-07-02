@@ -12,7 +12,7 @@ class ProductReqFactoryRealise: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: ServerPath.localBaseUrl.rawValue)!
     
     init(
         errorParser: AbstractErrorParser,
@@ -26,8 +26,8 @@ class ProductReqFactoryRealise: AbstractRequestFactory {
 
 
 extension ProductReqFactoryRealise: ProductRequestFactory {
-    func getAllProduct(completionHandler: @escaping (AFDataResponse<[Product]>) -> Void) {
-        let requestModel = GetAllProductRouter(baseUrl: baseUrl)
+    func getAllProduct(pageNumber: Int, idCategory: Int, completionHandler: @escaping (AFDataResponse<GetAllProductResponse>) -> Void) {
+        let requestModel = GetAllProductRouter(baseUrl: baseUrl, pageNumber: pageNumber, idCategory: idCategory)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
@@ -45,8 +45,15 @@ extension ProductReqFactoryRealise {
         
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "catalogData.json"
-        var parameters: Parameters?
+        let path: String = ServerPath.getAllProduct.rawValue
+        let pageNumber: Int
+        let idCategory: Int
+        var parameters: Parameters? {
+            return [
+                "page_number": pageNumber,
+                "id_category": idCategory
+            ]
+        }
     }
     
     struct GetProductByIdRouter: RequestRouter {

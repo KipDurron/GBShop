@@ -5,7 +5,7 @@
 //  Created by Илья Кадыров on 23.06.2021.
 //
 
-import Foundation
+
 
 struct User: Codable {
     let id: Int
