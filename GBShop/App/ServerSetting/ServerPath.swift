@@ -21,4 +21,7 @@ enum ServerPath: String {
     case logoutPath = "logout"
     case geekBrainsGetAllProduct = "catalogData.json"
     case getAllProduct = "getAllProduct"
+    case geekBrainsGetProductById = "getGoodById.json"
+    case getProductById = "getProductById"
+    
 }

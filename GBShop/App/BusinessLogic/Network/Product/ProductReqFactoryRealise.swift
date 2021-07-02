@@ -31,8 +31,8 @@ extension ProductReqFactoryRealise: ProductRequestFactory {
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func getProductById(id: Int, completionHandler: @escaping (AFDataResponse<ConcreteProduct>) -> Void) {
-        let requestModel = GetProductByIdRouter(baseUrl: baseUrl)
+    func getProductById(idProduct: Int, completionHandler: @escaping (AFDataResponse<GetProductByIdResponse>) -> Void) {
+        let requestModel = GetProductByIdRouter(baseUrl: baseUrl, idProduct: idProduct)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
@@ -60,7 +60,12 @@ extension ProductReqFactoryRealise {
         
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "getGoodById.json"
-        var parameters: Parameters?
+        let path: String = ServerPath.getProductById.rawValue
+        let idProduct: Int
+        var parameters: Parameters? {
+            return [
+                "id_product": idProduct
+            ]
+        }
     }
 }

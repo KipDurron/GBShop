@@ -30,6 +30,7 @@
 		EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DB268B88FA00EEB88B /* StandartResponse.swift */; };
 		EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */; };
 		ECB7C080268F26110047153C /* GetAllProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7C07F268F26110047153C /* GetAllProductResponse.swift */; };
+		ECB7C082268F2A5E0047153C /* GetProductByIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7C081268F2A5E0047153C /* GetProductByIdResponse.swift */; };
 		ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F625267CF16D00359582 /* AppDelegate.swift */; };
 		ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F627267CF16D00359582 /* SceneDelegate.swift */; };
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 		EC6190DB268B88FA00EEB88B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
 		EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUserInfo.swift; sourceTree = "<group>"; };
 		ECB7C07F268F26110047153C /* GetAllProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProductResponse.swift; sourceTree = "<group>"; };
+		ECB7C081268F2A5E0047153C /* GetProductByIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductByIdResponse.swift; sourceTree = "<group>"; };
 		ECF8F622267CF16D00359582 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F625267CF16D00359582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF8F627267CF16D00359582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				EC1844A42687967400E8A027 /* ConcreteProduct.swift */,
 				EC1844A026877CDD00E8A027 /* Product.swift */,
 				ECB7C07F268F26110047153C /* GetAllProductResponse.swift */,
+				ECB7C081268F2A5E0047153C /* GetProductByIdResponse.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */,
 				EC0965332683746A0042793C /* AbstractRequestFactory.swift in Sources */,
 				EC09652F26836A240042793C /* ErrorParser.swift in Sources */,
+				ECB7C082268F2A5E0047153C /* GetProductByIdResponse.swift in Sources */,
 				EC18449F26877BBD00E8A027 /* ProductRequestFactory.swift in Sources */,
 				EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */,
 				EC1844A126877CDD00E8A027 /* Product.swift in Sources */,
