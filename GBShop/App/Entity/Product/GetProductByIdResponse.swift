@@ -6,11 +6,11 @@
 //
 
 struct GetProductByIdResponse: Codable {
-    
+
     let result: Int
     var errorMessage: String?
     let product: Product
-    
+
     enum CodingKeys: String, CodingKey {
         case result = "result"
         case product = "product"

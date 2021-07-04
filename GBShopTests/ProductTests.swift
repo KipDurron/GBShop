@@ -10,11 +10,11 @@ import Alamofire
 @testable import GBShop
 
 struct ProductStub: Codable {
-    
+
     let id: Int
     let name: String
     let price: String
-    
+
     enum CodingKeys: String, CodingKey {
         case id = "id_product"
         case name = "product_name"
@@ -23,13 +23,13 @@ struct ProductStub: Codable {
 }
 
 class ProductTests: XCTestCase {
-    
+
     var requestFactory: RequestFactory!
     let expectation = XCTestExpectation(description: "for product requests")
 
     override func setUpWithError() throws {
         self.requestFactory = RequestFactory()
-        
+
     }
 
     override func tearDownWithError() throws {
@@ -37,7 +37,7 @@ class ProductTests: XCTestCase {
     }
 
     func testGetAllProduct() throws {
-        
+
         let productRequestFactory = requestFactory.makeProductRequestFatory()
         productRequestFactory.getAllProduct(pageNumber: 1, idCategory: 1) { (response) in
             switch response.result {
@@ -52,7 +52,7 @@ class ProductTests: XCTestCase {
     }
 
     func testGetProductById() throws {
-        
+
         let productRequestFactory = requestFactory.makeProductRequestFatory()
         productRequestFactory.getProductById(idProduct: 123) { (response) in
             switch response.result {
@@ -65,6 +65,5 @@ class ProductTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
-    
 
 }
