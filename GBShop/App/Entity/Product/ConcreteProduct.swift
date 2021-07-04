@@ -1,21 +1,19 @@
 //
-//  Product.swift
+//  ConcreteProduct.swift
 //  GBShop
 //
 //  Created by Илья Кадыров on 26.06.2021.
 //
 
-import Foundation
+struct ConcreteProduct: Codable {
 
-struct Product: Codable {
-    
-    let id: Int
+    let result: Int
     let name: String
     let price: Float
-    
+
     enum CodingKeys: String, CodingKey {
-        case id = "id_product"
+        case result = "result"
         case name = "product_name"
-        case price = "price"
+        case price = "product_price"
     }
 }
