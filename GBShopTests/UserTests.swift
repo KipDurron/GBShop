@@ -70,7 +70,7 @@ class UserTests: XCTestCase {
     func testChangeUserData() throws {
         let userRequestFactory = requestFactory.makeUserRequestFatory()
         let user = User(id: 123, login: "", name: "Somebody", lastname: "lastname")
-        let extraUserInfo = ExtraUserInfo(id: 0, password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language")
+        let extraUserInfo = ExtraUserInfo(id: user.id, password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language")
         
         userRequestFactory.changeUserData(user: user, extraUserInfo: extraUserInfo) { response in
             switch response.result {
