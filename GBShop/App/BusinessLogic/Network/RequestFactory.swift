@@ -33,4 +33,9 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return ProductReqFactoryRealise(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    
+    func makeReviewRequestFatory() -> ReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return ReviewReqFactoryRealise(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }

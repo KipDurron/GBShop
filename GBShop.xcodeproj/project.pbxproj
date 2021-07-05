@@ -10,6 +10,7 @@
 		0AAA3582E12D27A1A0018A8A /* Pods_GBShop_GBShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915475509866721B7759800D /* Pods_GBShop_GBShopUITests.framework */; };
 		5088274E20956A3F1C057445 /* Pods_GBShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA51A10917B79B091BD46D4 /* Pods_GBShop.framework */; };
 		9F5FBC278115937C8678056E /* Pods_GBShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A28F24C3B2F212258189FE /* Pods_GBShopTests.framework */; };
+		EC0405FC269334D200855A04 /* AddReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0405FB269334D200855A04 /* AddReviewRequest.swift */; };
 		EC09652D2683699E0042793C /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09652C2683699E0042793C /* AbstractErrorParser.swift */; };
 		EC09652F26836A240042793C /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09652E26836A240042793C /* ErrorParser.swift */; };
 		EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653026836B430042793C /* CustomDecodableSerializer.swift */; };
@@ -20,6 +21,11 @@
 		EC09653D2683CB0E0042793C /* UserRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653C2683CB0E0042793C /* UserRequestFactory.swift */; };
 		EC09653F2683CBD10042793C /* UserRequestFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09653E2683CBD10042793C /* UserRequestFactoryRealise.swift */; };
 		EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965402683CC8A0042793C /* RequestFactory.swift */; };
+		EC10761026923D7600EFB298 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10760E26923D7600EFB298 /* Review.swift */; };
+		EC10761126923D7600EFB298 /* GetAllReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10760F26923D7600EFB298 /* GetAllReviewResponse.swift */; };
+		EC10761326923E2A00EFB298 /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761226923E2A00EFB298 /* ReviewTests.swift */; };
+		EC10761626923EFE00EFB298 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761526923EFE00EFB298 /* ReviewRequestFactory.swift */; };
+		EC10761826923F7C00EFB298 /* ReviewReqFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761726923F7C00EFB298 /* ReviewReqFactoryRealise.swift */; };
 		EC18449B26874D2800E8A027 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */; };
 		EC18449D26876BDA00E8A027 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449C26876BDA00E8A027 /* ProductTests.swift */; };
 		EC18449F26877BBD00E8A027 /* ProductRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449E26877BBD00E8A027 /* ProductRequestFactory.swift */; };
@@ -66,6 +72,7 @@
 		915475509866721B7759800D /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9403A4341AAF2CCA099E1C44 /* Pods-GBShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.release.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		A97598DCC3D3A4B30ECF1439 /* Pods-GBShop-GBShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop-GBShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-GBShop-GBShopUITests/Pods-GBShop-GBShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0405FB269334D200855A04 /* AddReviewRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReviewRequest.swift; sourceTree = "<group>"; };
 		EC09652C2683699E0042793C /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
 		EC09652E26836A240042793C /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		EC09653026836B430042793C /* CustomDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecodableSerializer.swift; sourceTree = "<group>"; };
@@ -76,6 +83,11 @@
 		EC09653C2683CB0E0042793C /* UserRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestFactory.swift; sourceTree = "<group>"; };
 		EC09653E2683CBD10042793C /* UserRequestFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestFactoryRealise.swift; sourceTree = "<group>"; };
 		EC0965402683CC8A0042793C /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		EC10760E26923D7600EFB298 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		EC10760F26923D7600EFB298 /* GetAllReviewResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllReviewResponse.swift; sourceTree = "<group>"; };
+		EC10761226923E2A00EFB298 /* ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTests.swift; sourceTree = "<group>"; };
+		EC10761526923EFE00EFB298 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
+		EC10761726923F7C00EFB298 /* ReviewReqFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewReqFactoryRealise.swift; sourceTree = "<group>"; };
 		EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		EC18449C26876BDA00E8A027 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		EC18449E26877BBD00E8A027 /* ProductRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestFactory.swift; sourceTree = "<group>"; };
@@ -167,11 +179,31 @@
 		EC09653B2683CAFA0042793C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EC10761426923EAD00EFB298 /* Review */,
 				EC6190DA268B556A00EEB88B /* Product */,
 				EC6190D9268B549000EEB88B /* User */,
 				EC0965402683CC8A0042793C /* RequestFactory.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		EC10760D26923D7600EFB298 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				EC0405FB269334D200855A04 /* AddReviewRequest.swift */,
+				EC10760E26923D7600EFB298 /* Review.swift */,
+				EC10760F26923D7600EFB298 /* GetAllReviewResponse.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		EC10761426923EAD00EFB298 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				EC10761526923EFE00EFB298 /* ReviewRequestFactory.swift */,
+				EC10761726923F7C00EFB298 /* ReviewReqFactoryRealise.swift */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 		EC45277D268E54DE00AA9A47 /* ServerSetting */ = {
@@ -225,6 +257,7 @@
 		EC846524267D0C2B00640FFF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EC10760D26923D7600EFB298 /* Review */,
 				ECB7C07E268F26000047153C /* Auth */,
 				ECB7C07D268F25EE0047153C /* User */,
 				ECB7C07C268F25E10047153C /* Product */,
@@ -340,6 +373,7 @@
 				ECF8F63E267CF16E00359582 /* Info.plist */,
 				EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */,
 				EC18449C26876BDA00E8A027 /* ProductTests.swift */,
+				EC10761226923E2A00EFB298 /* ReviewTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -609,6 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC10761826923F7C00EFB298 /* ReviewReqFactoryRealise.swift in Sources */,
 				EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */,
 				EC1844A32687869400E8A027 /* ProductReqFactoryRealise.swift in Sources */,
 				EC09652D2683699E0042793C /* AbstractErrorParser.swift in Sources */,
@@ -618,16 +653,20 @@
 				EC09653D2683CB0E0042793C /* UserRequestFactory.swift in Sources */,
 				EC0965362683C90A0042793C /* RequestRouter.swift in Sources */,
 				ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */,
+				EC10761026923D7600EFB298 /* Review.swift in Sources */,
+				EC10761626923EFE00EFB298 /* ReviewRequestFactory.swift in Sources */,
 				EC0965382683CA9A0042793C /* LoginResponse.swift in Sources */,
 				EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */,
 				EC09653F2683CBD10042793C /* UserRequestFactoryRealise.swift in Sources */,
 				EC09653A2683CAC80042793C /* User.swift in Sources */,
 				EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */,
+				EC10761126923D7600EFB298 /* GetAllReviewResponse.swift in Sources */,
 				EC0965332683746A0042793C /* AbstractRequestFactory.swift in Sources */,
 				EC09652F26836A240042793C /* ErrorParser.swift in Sources */,
 				ECB7C082268F2A5E0047153C /* GetProductByIdResponse.swift in Sources */,
 				EC18449F26877BBD00E8A027 /* ProductRequestFactory.swift in Sources */,
 				EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */,
+				EC0405FC269334D200855A04 /* AddReviewRequest.swift in Sources */,
 				EC1844A126877CDD00E8A027 /* Product.swift in Sources */,
 				EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */,
 			);
@@ -640,6 +679,7 @@
 				ECF8F63D267CF16E00359582 /* UserTests.swift in Sources */,
 				EC18449B26874D2800E8A027 /* ResponseCodableTests.swift in Sources */,
 				EC18449D26876BDA00E8A027 /* ProductTests.swift in Sources */,
+				EC10761326923E2A00EFB298 /* ReviewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

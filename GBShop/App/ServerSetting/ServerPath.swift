@@ -26,5 +26,8 @@ enum ServerPath: String {
     case getAllProduct = "getAllProduct"
     case geekBrainsGetProductById = "getGoodById.json"
     case getProductById = "getProductById"
-
+    // MARK: - Review paths
+    case getAllReview = "getAllReview"
+    case addReview = "addReview"
+    case deleteReview = "deleteReview"
 }
