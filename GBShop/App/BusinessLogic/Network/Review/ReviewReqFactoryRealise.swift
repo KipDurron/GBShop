@@ -29,7 +29,7 @@ extension ReviewReqFactoryRealise: ReviewRequestFactory {
         let requestModel = DeleteReviewRouter(baseUrl: baseUrl, idReview: idReview)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-    
+
     func addReview(idUser: Int,
                    idProduct: Int,
                    text: String,
@@ -37,7 +37,7 @@ extension ReviewReqFactoryRealise: ReviewRequestFactory {
         let requestModel = AddReviewRouter(baseUrl: baseUrl, idUser: idUser, idProduct: idProduct, text: text)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-    
+
     func getAllReview(completionHandler: @escaping (AFDataResponse<GetAllReviewResponse>) -> Void) {
         let requestModel = GetAllReviewRouter(baseUrl: baseUrl)
         self.request(request: requestModel, completionHandler: completionHandler)
@@ -46,7 +46,7 @@ extension ReviewReqFactoryRealise: ReviewRequestFactory {
 }
 
 extension ReviewReqFactoryRealise {
-    
+
     struct DeleteReviewRouter: RequestRouter {
 
         let baseUrl: URL
@@ -76,7 +76,7 @@ extension ReviewReqFactoryRealise {
             ]
         }
     }
-    
+
     struct GetAllReviewRouter: RequestRouter {
 
         let baseUrl: URL
@@ -85,6 +85,4 @@ extension ReviewReqFactoryRealise {
         var parameters: Parameters?
     }
 
-
 }
-

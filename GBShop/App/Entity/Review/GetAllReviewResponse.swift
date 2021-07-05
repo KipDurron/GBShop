@@ -6,12 +6,12 @@
 //
 
 struct GetAllReviewResponse: Codable {
-    
+
     let result: Int
     let pageNumber: Int
     var errorMessage: String?
     let reviews: [Review]
-    
+
     enum CodingKeys: String, CodingKey {
         case result = "result"
         case pageNumber = "page_number"

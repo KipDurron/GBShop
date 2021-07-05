@@ -35,7 +35,7 @@ class ReviewTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
-    
+
     func testAddReview() throws {
         let reviewRequestFactory = requestFactory.makeReviewRequestFatory()
 
@@ -50,7 +50,7 @@ class ReviewTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
-    
+
     func testDeleteReview() throws {
         let reviewRequestFactory = requestFactory.makeReviewRequestFatory()
 
