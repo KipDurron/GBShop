@@ -1,21 +1,21 @@
 //
-//  GetAllProductResponse.swift
-//  GBShop
+//  File.swift
+//  
 //
-//  Created by Илья Кадыров on 02.07.2021.
+//  Created by Илья Кадыров on 04.07.2021.
 //
 
-struct GetAllProductResponse: Codable {
+struct GetAllReviewResponse: Codable {
 
     let result: Int
     let pageNumber: Int
     var errorMessage: String?
-    let products: [Product]
+    let reviews: [Review]
 
     enum CodingKeys: String, CodingKey {
         case result = "result"
         case pageNumber = "page_number"
-        case products = "products"
+        case reviews = "reviews"
         case errorMessage = "error_message"
     }
 }

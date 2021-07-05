@@ -12,7 +12,7 @@ struct ExtraUserInfo: Codable {
     let gender: String
     let creditCard: String
     let bio: String
-    
+
     enum CodingKeys: String, CodingKey {
         case id = "id_user"
         case password = "password"
