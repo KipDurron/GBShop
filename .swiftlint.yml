@@ -16,6 +16,8 @@ included: # paths to include during linting. `--path` is ignored if present.
   - GBShopTests
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
+  - GBShop/App/AppDelegate.swift
+  - GBShop/App/SceneDelegate.swift
   - Pods
   - Source/ExcludedFolder
   - Source/ExcludedFile.swift
