@@ -25,17 +25,21 @@ class BasketRequestFactoryRealise: AbstractRequestFactory {
 }
 
 extension BasketRequestFactoryRealise: BasketRequestFactory {
-    func addToBasket(itemOfBasket: ItemOfBasket, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
+    func addToBasket(itemOfBasket: ItemOfBasket,
+                     completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
         let requestModel = AddToBasketRouter(baseUrl: baseUrl, itemOfBasket: itemOfBasket)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-    
-    func deleteFromBasket(idUser: Int, idProduct: Int, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
+
+    func deleteFromBasket(idUser: Int,
+                          idProduct: Int,
+                          completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
         let requestModel = DeleteFromBasketRouter(baseUrl: baseUrl, idUser: idUser, idProduct: idProduct)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-    
-    func payBasket(idUser: Int, completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
+
+    func payBasket(idUser: Int,
+                   completionHandler: @escaping (AFDataResponse<StandartResponse>) -> Void) {
         let requestModel = PayBasketRouter(baseUrl: baseUrl, idUser: idUser)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
@@ -69,7 +73,7 @@ extension BasketRequestFactoryRealise {
         var parameters: Parameters? {
             return [
                 "id_user": idUser,
-                "id_product": idProduct,
+                "id_product": idProduct
             ]
         }
     }
@@ -88,4 +92,3 @@ extension BasketRequestFactoryRealise {
     }
 
 }
-
