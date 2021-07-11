@@ -25,18 +25,24 @@
 		EC10761126923D7600EFB298 /* GetAllReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10760F26923D7600EFB298 /* GetAllReviewResponse.swift */; };
 		EC10761326923E2A00EFB298 /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761226923E2A00EFB298 /* ReviewTests.swift */; };
 		EC10761626923EFE00EFB298 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761526923EFE00EFB298 /* ReviewRequestFactory.swift */; };
-		EC10761826923F7C00EFB298 /* ReviewReqFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761726923F7C00EFB298 /* ReviewReqFactoryRealise.swift */; };
+		EC10761826923F7C00EFB298 /* ReviewRequestFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10761726923F7C00EFB298 /* ReviewRequestFactoryRealise.swift */; };
 		EC18449B26874D2800E8A027 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */; };
 		EC18449D26876BDA00E8A027 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449C26876BDA00E8A027 /* ProductTests.swift */; };
 		EC18449F26877BBD00E8A027 /* ProductRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18449E26877BBD00E8A027 /* ProductRequestFactory.swift */; };
 		EC1844A126877CDD00E8A027 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A026877CDD00E8A027 /* Product.swift */; };
-		EC1844A32687869400E8A027 /* ProductReqFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A22687869400E8A027 /* ProductReqFactoryRealise.swift */; };
+		EC1844A32687869400E8A027 /* ProductRequestFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A22687869400E8A027 /* ProductRequestFactoryRealise.swift */; };
 		EC1844A52687967400E8A027 /* ConcreteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A42687967400E8A027 /* ConcreteProduct.swift */; };
 		EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45277E268E551400AA9A47 /* ServerPath.swift */; };
 		EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DB268B88FA00EEB88B /* StandartResponse.swift */; };
 		EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */; };
 		ECB7C080268F26110047153C /* GetAllProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7C07F268F26110047153C /* GetAllProductResponse.swift */; };
 		ECB7C082268F2A5E0047153C /* GetProductByIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7C081268F2A5E0047153C /* GetProductByIdResponse.swift */; };
+		ECCDB3532695FB3E00402718 /* BasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB3522695FB3E00402718 /* BasketTests.swift */; };
+		ECCDB3562695FC4100402718 /* BasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB3552695FC4100402718 /* BasketRequestFactory.swift */; };
+		ECCDB35A2695FCAC00402718 /* GetBasketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB3582695FCAC00402718 /* GetBasketResponse.swift */; };
+		ECCDB35B2695FCAC00402718 /* ItemOfBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB3592695FCAC00402718 /* ItemOfBasket.swift */; };
+		ECCDB35D2695FD8500402718 /* BasketRequestFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB35C2695FD8500402718 /* BasketRequestFactoryRealise.swift */; };
+		ECCDB35F269605F000402718 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB35E269605F000402718 /* FirstViewController.swift */; };
 		ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F625267CF16D00359582 /* AppDelegate.swift */; };
 		ECF8F628267CF16D00359582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F627267CF16D00359582 /* SceneDelegate.swift */; };
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
@@ -87,18 +93,24 @@
 		EC10760F26923D7600EFB298 /* GetAllReviewResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllReviewResponse.swift; sourceTree = "<group>"; };
 		EC10761226923E2A00EFB298 /* ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTests.swift; sourceTree = "<group>"; };
 		EC10761526923EFE00EFB298 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
-		EC10761726923F7C00EFB298 /* ReviewReqFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewReqFactoryRealise.swift; sourceTree = "<group>"; };
+		EC10761726923F7C00EFB298 /* ReviewRequestFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactoryRealise.swift; sourceTree = "<group>"; };
 		EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		EC18449C26876BDA00E8A027 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		EC18449E26877BBD00E8A027 /* ProductRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestFactory.swift; sourceTree = "<group>"; };
 		EC1844A026877CDD00E8A027 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		EC1844A22687869400E8A027 /* ProductReqFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReqFactoryRealise.swift; sourceTree = "<group>"; };
+		EC1844A22687869400E8A027 /* ProductRequestFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestFactoryRealise.swift; sourceTree = "<group>"; };
 		EC1844A42687967400E8A027 /* ConcreteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteProduct.swift; sourceTree = "<group>"; };
 		EC45277E268E551400AA9A47 /* ServerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPath.swift; sourceTree = "<group>"; };
 		EC6190DB268B88FA00EEB88B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
 		EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUserInfo.swift; sourceTree = "<group>"; };
 		ECB7C07F268F26110047153C /* GetAllProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProductResponse.swift; sourceTree = "<group>"; };
 		ECB7C081268F2A5E0047153C /* GetProductByIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductByIdResponse.swift; sourceTree = "<group>"; };
+		ECCDB3522695FB3E00402718 /* BasketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTests.swift; sourceTree = "<group>"; };
+		ECCDB3552695FC4100402718 /* BasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRequestFactory.swift; sourceTree = "<group>"; };
+		ECCDB3582695FCAC00402718 /* GetBasketResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBasketResponse.swift; sourceTree = "<group>"; };
+		ECCDB3592695FCAC00402718 /* ItemOfBasket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemOfBasket.swift; sourceTree = "<group>"; };
+		ECCDB35C2695FD8500402718 /* BasketRequestFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRequestFactoryRealise.swift; sourceTree = "<group>"; };
+		ECCDB35E269605F000402718 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		ECF8F622267CF16D00359582 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8F625267CF16D00359582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF8F627267CF16D00359582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +191,7 @@
 		EC09653B2683CAFA0042793C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				ECCDB3542695FC3200402718 /* Basket */,
 				EC10761426923EAD00EFB298 /* Review */,
 				EC6190DA268B556A00EEB88B /* Product */,
 				EC6190D9268B549000EEB88B /* User */,
@@ -201,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				EC10761526923EFE00EFB298 /* ReviewRequestFactory.swift */,
-				EC10761726923F7C00EFB298 /* ReviewReqFactoryRealise.swift */,
+				EC10761726923F7C00EFB298 /* ReviewRequestFactoryRealise.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -227,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				EC18449E26877BBD00E8A027 /* ProductRequestFactory.swift */,
-				EC1844A22687869400E8A027 /* ProductReqFactoryRealise.swift */,
+				EC1844A22687869400E8A027 /* ProductRequestFactoryRealise.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 		EC846524267D0C2B00640FFF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				ECCDB3572695FC8B00402718 /* Basket */,
 				EC10760D26923D7600EFB298 /* Review */,
 				ECB7C07E268F26000047153C /* Auth */,
 				ECB7C07D268F25EE0047153C /* User */,
@@ -276,6 +290,7 @@
 		EC846526267D0C5200640FFF /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				ECCDB35E269605F000402718 /* FirstViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -333,6 +348,24 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		ECCDB3542695FC3200402718 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB3552695FC4100402718 /* BasketRequestFactory.swift */,
+				ECCDB35C2695FD8500402718 /* BasketRequestFactoryRealise.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		ECCDB3572695FC8B00402718 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB3582695FCAC00402718 /* GetBasketResponse.swift */,
+				ECCDB3592695FCAC00402718 /* ItemOfBasket.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
 		ECF8F619267CF16D00359582 = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +407,7 @@
 				EC18449A26874D2800E8A027 /* ResponseCodableTests.swift */,
 				EC18449C26876BDA00E8A027 /* ProductTests.swift */,
 				EC10761226923E2A00EFB298 /* ReviewTests.swift */,
+				ECCDB3522695FB3E00402718 /* BasketTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -643,10 +677,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC10761826923F7C00EFB298 /* ReviewReqFactoryRealise.swift in Sources */,
+				EC10761826923F7C00EFB298 /* ReviewRequestFactoryRealise.swift in Sources */,
 				EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */,
-				EC1844A32687869400E8A027 /* ProductReqFactoryRealise.swift in Sources */,
+				EC1844A32687869400E8A027 /* ProductRequestFactoryRealise.swift in Sources */,
 				EC09652D2683699E0042793C /* AbstractErrorParser.swift in Sources */,
+				ECCDB35D2695FD8500402718 /* BasketRequestFactoryRealise.swift in Sources */,
 				ECB7C080268F26110047153C /* GetAllProductResponse.swift in Sources */,
 				ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */,
 				EC1844A52687967400E8A027 /* ConcreteProduct.swift in Sources */,
@@ -659,15 +694,19 @@
 				EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */,
 				EC09653F2683CBD10042793C /* UserRequestFactoryRealise.swift in Sources */,
 				EC09653A2683CAC80042793C /* User.swift in Sources */,
+				ECCDB3562695FC4100402718 /* BasketRequestFactory.swift in Sources */,
 				EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */,
 				EC10761126923D7600EFB298 /* GetAllReviewResponse.swift in Sources */,
 				EC0965332683746A0042793C /* AbstractRequestFactory.swift in Sources */,
 				EC09652F26836A240042793C /* ErrorParser.swift in Sources */,
 				ECB7C082268F2A5E0047153C /* GetProductByIdResponse.swift in Sources */,
 				EC18449F26877BBD00E8A027 /* ProductRequestFactory.swift in Sources */,
+				ECCDB35A2695FCAC00402718 /* GetBasketResponse.swift in Sources */,
 				EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */,
 				EC0405FC269334D200855A04 /* AddReviewRequest.swift in Sources */,
 				EC1844A126877CDD00E8A027 /* Product.swift in Sources */,
+				ECCDB35F269605F000402718 /* FirstViewController.swift in Sources */,
+				ECCDB35B2695FCAC00402718 /* ItemOfBasket.swift in Sources */,
 				EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF8F63D267CF16E00359582 /* UserTests.swift in Sources */,
+				ECCDB3532695FB3E00402718 /* BasketTests.swift in Sources */,
 				EC18449B26874D2800E8A027 /* ResponseCodableTests.swift in Sources */,
 				EC18449D26876BDA00E8A027 /* ProductTests.swift in Sources */,
 				EC10761326923E2A00EFB298 /* ReviewTests.swift in Sources */,
