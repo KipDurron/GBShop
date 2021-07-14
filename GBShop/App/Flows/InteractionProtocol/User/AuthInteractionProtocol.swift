@@ -6,17 +6,15 @@
 //
 
 protocol AuthViewToPresenterProtocol: AnyObject {
-    
     func startSendLoginRequest(login: String, password: String)
 
 }
 
 protocol AuthPresenterToViewProtocol: AnyObject {
-//    func showNotice(noticeArray:Array<NoticeModel>)
-//    func showError()
+
 }
 
-protocol AuthPresenterToRouterProtocol: PresenterToRouterProtocol,AnyObject {
+protocol AuthPresenterToRouterProtocol: PresenterToRouterProtocol, AnyObject {
     func moveToUserAccountView()
 }
 
@@ -25,6 +23,6 @@ protocol AuthPresenterToInteractorProtocol: AnyObject {
 }
 
 protocol AuthInteractorToPresenterProtocol: AnyObject {
-    func startShowError(text: String)
     func startMoveToUserAccountView()
+    func startShowMessage(text: String, messageType: MessageTypeEnum)
 }

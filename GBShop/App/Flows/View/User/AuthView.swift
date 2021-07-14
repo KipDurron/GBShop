@@ -16,38 +16,23 @@ class AuthView: UIView {
         return textView
     }()
     
-    var loginTextField: UITextField = {
-        let loginTextField = UITextField()
-        loginTextField.translatesAutoresizingMaskIntoConstraints = false
-        loginTextField.textColor = .black
-        loginTextField.borderStyle = .line
-        loginTextField.placeholder = "Login"
+    var loginTextField: BaseTextField = {
+        let loginTextField = BaseTextField(placeholder: "Login")
         return loginTextField
     }()
 
-    var passwordTextField: UITextField = {
-        let passwordTextField = UITextField()
-        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        passwordTextField.isSecureTextEntry = true
-        passwordTextField.textColor = .black
-        passwordTextField.borderStyle = .line
-        passwordTextField.placeholder = "Password"
+    var passwordTextField: BaseTextField = {
+        let passwordTextField =  BaseTextField(placeholder: "Password")
         return passwordTextField
     }()
     
-    var loginButton: UIButton = {
-        let loginButton = UIButton()
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.setTitle("Log in", for: .normal)
-        loginButton.backgroundColor = .gray
+    var loginButton: BaseButton = {
+        let loginButton = BaseButton(title: "Log in")
         return loginButton
     }()
     
-    var toSignUpButton: UIButton = {
-        let toSignUpButton = UIButton()
-        toSignUpButton.translatesAutoresizingMaskIntoConstraints = false
-        toSignUpButton.setTitle("Sign up", for: .normal)
-        toSignUpButton.backgroundColor = .gray
+    var toSignUpButton: BaseButton = {
+        let toSignUpButton = BaseButton(title: "Sign up")
         return toSignUpButton
     }()
     

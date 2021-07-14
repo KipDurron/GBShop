@@ -10,7 +10,7 @@
 class AuthPresenter {
     
     private let interactor: AuthPresenterToInteractorProtocol
-    private let router: AuthPresenterToRouterProtocol
+    var router: AuthPresenterToRouterProtocol
     private weak var controller: AuthPresenterToViewProtocol?
     
     init(interactor: AuthPresenterToInteractorProtocol,
@@ -36,10 +36,9 @@ extension AuthPresenter: AuthInteractorToPresenterProtocol {
         self.router.moveToUserAccountView()
     }
     
-    func startShowError(text: String) {
-        self.router.showError(text: text)
+    func startShowMessage(text: String, messageType: MessageTypeEnum) {
+        self.router.showMessage(text: text, messageType: messageType)
     }
     
 }
-
 

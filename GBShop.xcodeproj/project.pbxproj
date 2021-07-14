@@ -35,6 +35,19 @@
 		EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45277E268E551400AA9A47 /* ServerPath.swift */; };
 		EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DB268B88FA00EEB88B /* StandartResponse.swift */; };
 		EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */; };
+		EC6954FF269EBC6B00AE1480 /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6954FE269EBC6B00AE1480 /* UserAccountView.swift */; };
+		EC695501269EC3AD00AE1480 /* GenderPickerSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695500269EC3AD00AE1480 /* GenderPickerSetting.swift */; };
+		EC695503269ECC0600AE1480 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695502269ECC0600AE1480 /* UserAccountViewController.swift */; };
+		EC695505269ED44B00AE1480 /* UserAccountInteractionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695504269ED44B00AE1480 /* UserAccountInteractionProtocol.swift */; };
+		EC695507269EE2E400AE1480 /* UserAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695506269EE2E400AE1480 /* UserAccountPresenter.swift */; };
+		EC695509269EE42100AE1480 /* UserAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695508269EE42100AE1480 /* UserAccountInteractor.swift */; };
+		EC69550B269EEABE00AE1480 /* UserAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69550A269EEABE00AE1480 /* UserAccountRouter.swift */; };
+		EC69550E269EED4300AE1480 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69550D269EED4300AE1480 /* BaseTextField.swift */; };
+		EC695510269EF10700AE1480 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69550F269EF10700AE1480 /* BaseButton.swift */; };
+		EC695512269EF29A00AE1480 /* BaseHeaderTitleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695511269EF29A00AE1480 /* BaseHeaderTitleApp.swift */; };
+		EC695516269F25FA00AE1480 /* MessageTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695515269F25FA00AE1480 /* MessageTypeEnum.swift */; };
+		EC69551A269F2B4200AE1480 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC695519269F2B4200AE1480 /* UserService.swift */; };
+		EC69551D269F2E1700AE1480 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69551C269F2E1700AE1480 /* ServiceFactory.swift */; };
 		ECADF7E9269D83EB0047EE03 /* MarginSettingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECADF7E8269D83EB0047EE03 /* MarginSettingsEnum.swift */; };
 		ECADF7EE269DB5A50047EE03 /* FlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECADF7ED269DB5A50047EE03 /* FlowFactory.swift */; };
 		ECADF7F1269DB6060047EE03 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECADF7F0269DB6060047EE03 /* AuthPresenter.swift */; };
@@ -113,6 +126,19 @@
 		EC45277E268E551400AA9A47 /* ServerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPath.swift; sourceTree = "<group>"; };
 		EC6190DB268B88FA00EEB88B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
 		EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUserInfo.swift; sourceTree = "<group>"; };
+		EC6954FE269EBC6B00AE1480 /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
+		EC695500269EC3AD00AE1480 /* GenderPickerSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerSetting.swift; sourceTree = "<group>"; };
+		EC695502269ECC0600AE1480 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		EC695504269ED44B00AE1480 /* UserAccountInteractionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountInteractionProtocol.swift; sourceTree = "<group>"; };
+		EC695506269EE2E400AE1480 /* UserAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountPresenter.swift; sourceTree = "<group>"; };
+		EC695508269EE42100AE1480 /* UserAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountInteractor.swift; sourceTree = "<group>"; };
+		EC69550A269EEABE00AE1480 /* UserAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountRouter.swift; sourceTree = "<group>"; };
+		EC69550D269EED4300AE1480 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		EC69550F269EF10700AE1480 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		EC695511269EF29A00AE1480 /* BaseHeaderTitleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeaderTitleApp.swift; sourceTree = "<group>"; };
+		EC695515269F25FA00AE1480 /* MessageTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTypeEnum.swift; sourceTree = "<group>"; };
+		EC695519269F2B4200AE1480 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EC69551C269F2E1700AE1480 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		ECADF7E8269D83EB0047EE03 /* MarginSettingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginSettingsEnum.swift; sourceTree = "<group>"; };
 		ECADF7ED269DB5A50047EE03 /* FlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowFactory.swift; sourceTree = "<group>"; };
 		ECADF7F0269DB6060047EE03 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
@@ -215,7 +241,6 @@
 				EC10761426923EAD00EFB298 /* Review */,
 				EC6190DA268B556A00EEB88B /* Product */,
 				EC6190D9268B549000EEB88B /* User */,
-				EC0965402683CC8A0042793C /* RequestFactory.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -244,6 +269,8 @@
 			children = (
 				ECADF7E8269D83EB0047EE03 /* MarginSettingsEnum.swift */,
 				EC45277E268E551400AA9A47 /* ServerPath.swift */,
+				EC695500269EC3AD00AE1480 /* GenderPickerSetting.swift */,
+				EC695515269F25FA00AE1480 /* MessageTypeEnum.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -266,9 +293,30 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		EC695517269F2B2500AE1480 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC695519269F2B4200AE1480 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC69551B269F2B6F00AE1480 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EC0965402683CC8A0042793C /* RequestFactory.swift */,
+				ECD9B526269C79B5001107F5 /* CustomViewFactory.swift */,
+				ECADF7ED269DB5A50047EE03 /* FlowFactory.swift */,
+				EC69551C269F2E1700AE1480 /* ServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		EC846522267D0BB800640FFF /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EC69551B269F2B6F00AE1480 /* Factory */,
+				EC695517269F2B2500AE1480 /* Service */,
 				EC45277D268E54DE00AA9A47 /* Setting */,
 				ECF8F625267CF16D00359582 /* AppDelegate.swift */,
 				ECF8F627267CF16D00359582 /* SceneDelegate.swift */,
@@ -317,7 +365,6 @@
 				ECADF7EA269DB4E90047EE03 /* Interactor */,
 				ECADF7E4269D6B5D0047EE03 /* View */,
 				ECADF7E3269D6B470047EE03 /* Controller */,
-				ECADF7ED269DB5A50047EE03 /* FlowFactory.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -358,7 +405,6 @@
 		ECADF7E4269D6B5D0047EE03 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ECD9B526269C79B5001107F5 /* CustomViewFactory.swift */,
 				ECADF7E6269D6BEC0047EE03 /* Base */,
 				ECADF7E5269D6BBF0047EE03 /* User */,
 			);
@@ -369,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				ECD9B528269C79ED001107F5 /* AuthView.swift */,
+				EC6954FE269EBC6B00AE1480 /* UserAccountView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -376,7 +423,10 @@
 		ECADF7E6269D6BEC0047EE03 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EC69550D269EED4300AE1480 /* BaseTextField.swift */,
 				ECD9B52A269C84F3001107F5 /* BaseViewWithScroll.swift */,
+				EC69550F269EF10700AE1480 /* BaseButton.swift */,
+				EC695511269EF29A00AE1480 /* BaseHeaderTitleApp.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -409,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				ECADF7F0269DB6060047EE03 /* AuthPresenter.swift */,
+				EC695506269EE2E400AE1480 /* UserAccountPresenter.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -426,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				ECADF7F4269DB7990047EE03 /* AuthInteractionProtocol.swift */,
+				EC695504269ED44B00AE1480 /* UserAccountInteractionProtocol.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -434,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				ECADF7F7269DC9200047EE03 /* AuthInteractor.swift */,
+				EC695508269EE42100AE1480 /* UserAccountInteractor.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -442,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				ECADF7FA269DCB3D0047EE03 /* AuthRouter.swift */,
+				EC69550A269EEABE00AE1480 /* UserAccountRouter.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -504,6 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCDB35E269605F000402718 /* AuthViewController.swift */,
+				EC695502269ECC0600AE1480 /* UserAccountViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -821,16 +876,20 @@
 			files = (
 				ECD9B527269C79B5001107F5 /* CustomViewFactory.swift in Sources */,
 				EC10761826923F7C00EFB298 /* ReviewRequestFactoryRealise.swift in Sources */,
+				EC69551A269F2B4200AE1480 /* UserService.swift in Sources */,
 				ECD9B52B269C84F3001107F5 /* BaseViewWithScroll.swift in Sources */,
+				EC6954FF269EBC6B00AE1480 /* UserAccountView.swift in Sources */,
 				EC0965412683CC8A0042793C /* RequestFactory.swift in Sources */,
 				EC1844A32687869400E8A027 /* ProductRequestFactoryRealise.swift in Sources */,
 				ECADF7F8269DC9200047EE03 /* AuthInteractor.swift in Sources */,
 				EC09652D2683699E0042793C /* AbstractErrorParser.swift in Sources */,
 				ECADF7F1269DB6060047EE03 /* AuthPresenter.swift in Sources */,
+				EC695505269ED44B00AE1480 /* UserAccountInteractionProtocol.swift in Sources */,
 				ECCDB35D2695FD8500402718 /* BasketRequestFactoryRealise.swift in Sources */,
 				ECB7C080268F26110047153C /* GetAllProductResponse.swift in Sources */,
 				ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */,
 				EC1844A52687967400E8A027 /* ConcreteProduct.swift in Sources */,
+				EC69551D269F2E1700AE1480 /* ServiceFactory.swift in Sources */,
 				ECADF7E9269D83EB0047EE03 /* MarginSettingsEnum.swift in Sources */,
 				EC09653D2683CB0E0042793C /* UserRequestFactory.swift in Sources */,
 				ECADF7FE269DE7CD0047EE03 /* PresenterToRouterProtocol.swift in Sources */,
@@ -840,14 +899,22 @@
 				ECADF7F5269DB7990047EE03 /* AuthInteractionProtocol.swift in Sources */,
 				EC10761626923EFE00EFB298 /* ReviewRequestFactory.swift in Sources */,
 				EC0965382683CA9A0042793C /* LoginResponse.swift in Sources */,
+				EC695516269F25FA00AE1480 /* MessageTypeEnum.swift in Sources */,
 				EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */,
 				EC09653F2683CBD10042793C /* UserRequestFactoryRealise.swift in Sources */,
+				EC695501269EC3AD00AE1480 /* GenderPickerSetting.swift in Sources */,
+				EC695503269ECC0600AE1480 /* UserAccountViewController.swift in Sources */,
+				EC695507269EE2E400AE1480 /* UserAccountPresenter.swift in Sources */,
+				EC695512269EF29A00AE1480 /* BaseHeaderTitleApp.swift in Sources */,
 				ECADF7FB269DCB3D0047EE03 /* AuthRouter.swift in Sources */,
 				EC09653A2683CAC80042793C /* User.swift in Sources */,
 				ECCDB3562695FC4100402718 /* BasketRequestFactory.swift in Sources */,
+				EC695509269EE42100AE1480 /* UserAccountInteractor.swift in Sources */,
+				EC69550E269EED4300AE1480 /* BaseTextField.swift in Sources */,
 				EC09653126836B430042793C /* CustomDecodableSerializer.swift in Sources */,
 				ECD9B529269C79ED001107F5 /* AuthView.swift in Sources */,
 				EC10761126923D7600EFB298 /* GetAllReviewResponse.swift in Sources */,
+				EC695510269EF10700AE1480 /* BaseButton.swift in Sources */,
 				EC0965332683746A0042793C /* AbstractRequestFactory.swift in Sources */,
 				EC09652F26836A240042793C /* ErrorParser.swift in Sources */,
 				ECB7C082268F2A5E0047153C /* GetProductByIdResponse.swift in Sources */,
@@ -860,6 +927,7 @@
 				ECCDB35F269605F000402718 /* AuthViewController.swift in Sources */,
 				ECCDB35B2695FCAC00402718 /* ItemOfBasket.swift in Sources */,
 				EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */,
+				EC69550B269EEABE00AE1480 /* UserAccountRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

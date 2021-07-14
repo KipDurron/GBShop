@@ -9,14 +9,21 @@ import UIKit
 protocol PresenterToRouterProtocol {
     var controller: UIViewController? {get set}
     var flowFactory: FlowFactory { get }
-    func showError(text: String)
+    func showMessage(text: String, messageType: MessageTypeEnum)
 }
 
 extension PresenterToRouterProtocol {
     
-    func showError(text: String) {
-        let alert = flowFactory.makeErrorFlow(text: text)
-        self.controller?.present(alert, animated: true, completion: nil)
+    func showMessage(text: String, messageType: MessageTypeEnum) {
+        let message: UIAlertController
+        switch messageType {
+        case .message:
+            message = flowFactory.makeMessageFlow(text: text)
+        case .error:
+            message = flowFactory.makeErrorFlow(text: text)
+        }
+        
+        self.controller?.present(message, animated: true, completion: nil)
     }
     
 }
