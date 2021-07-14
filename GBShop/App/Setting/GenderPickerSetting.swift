@@ -10,7 +10,7 @@ import Foundation
 enum GenderPickerSetting: String {
     case man = "m"
     case woman = "w"
-    
+
     func nameToString() -> String {
         return "\(self)"
     }

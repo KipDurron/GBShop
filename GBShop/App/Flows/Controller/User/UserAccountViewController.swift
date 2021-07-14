@@ -12,7 +12,7 @@ class UserAccountViewController: UIViewController {
     private let viewFactory = CustomViewFactory()
     private var userAccountView: BaseViewWithScroll<UserAccountView>?
     private let presenter: UserAccountViewToPresenterProtocol
-    
+
     private var genderPickerDataArray = [GenderPickerSetting]()
 
     override func loadView() {
@@ -20,7 +20,7 @@ class UserAccountViewController: UIViewController {
         userAccountView = viewFactory.makeUserAccountView()
         self.view = userAccountView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "User account"
@@ -34,7 +34,7 @@ class UserAccountViewController: UIViewController {
         self.userAccountView?.contentView.genderPickerView.dataSource = self
         self.presenter.startGetDataForGenderPicker()
     }
-    
+
     private func setupButtons() {
         self.userAccountView?.contentView.editDataBarButton.target = self
         self.userAccountView?.contentView.editDataBarButton.action = #selector(editDataBarButtonAction)
@@ -43,7 +43,7 @@ class UserAccountViewController: UIViewController {
                                                                        action: #selector(saveUserDataButtonAction),
                                                                        for: .touchUpInside)
     }
-    
+
     @objc func saveUserDataButtonAction() {
         let user = User(id: 0,
                         login: self.userAccountView?.contentView.loginTextField.text ?? "",
@@ -59,7 +59,7 @@ class UserAccountViewController: UIViewController {
                                           bio: self.userAccountView?.contentView.bioTextField.text ?? "")
         self.presenter.startSaveUserData(user: user, extraUserInfo: extraUserInfo)
     }
-    
+
     @objc func editDataBarButtonAction() {
         self.userAccountView?.contentView.bioTextField.isEnabled = true
         self.userAccountView?.contentView.creditCardTextField.isEnabled = true
@@ -69,7 +69,7 @@ class UserAccountViewController: UIViewController {
         self.userAccountView?.contentView.passwordTextField.isEnabled = true
         self.userAccountView?.contentView.saveUserDataButton.isHidden = false
     }
-    
+
     init(presenter: UserAccountViewToPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -79,7 +79,6 @@ class UserAccountViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 
 }
 
@@ -94,11 +93,11 @@ extension UserAccountViewController: UIPickerViewDelegate, UIPickerViewDataSourc
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         self.genderPickerDataArray.count
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let row = self.genderPickerDataArray[row].nameToString()
        return row

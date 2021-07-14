@@ -13,7 +13,7 @@ protocol PresenterToRouterProtocol {
 }
 
 extension PresenterToRouterProtocol {
-    
+
     func showMessage(text: String, messageType: MessageTypeEnum) {
         let message: UIAlertController
         switch messageType {
@@ -22,8 +22,8 @@ extension PresenterToRouterProtocol {
         case .error:
             message = flowFactory.makeErrorFlow(text: text)
         }
-        
+
         self.controller?.present(message, animated: true, completion: nil)
     }
-    
+
 }

@@ -6,7 +6,7 @@
 //
 
 class UserService {
-    
+
     func authDataIsEmpty(login: String, password: String) -> Bool {
         if login.isEmpty ||
             password.isEmpty {
@@ -15,7 +15,7 @@ class UserService {
             return false
         }
     }
-    
+
     func userDataIsEmpty(user: User) -> Bool {
         if user.lastname.isEmpty ||
             user.login.isEmpty ||
@@ -25,13 +25,13 @@ class UserService {
             return false
         }
     }
-    
+
     func extraUserInfoDataIsEmpty(extraUserInfo: ExtraUserInfo) -> Bool {
         if extraUserInfo.bio.isEmpty ||
             extraUserInfo.creditCard.isEmpty ||
             extraUserInfo.email.isEmpty ||
             extraUserInfo.gender.isEmpty ||
-            extraUserInfo.password.isEmpty{
+            extraUserInfo.password.isEmpty {
             return true
         } else {
             return false

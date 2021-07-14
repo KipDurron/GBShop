@@ -13,7 +13,7 @@ class BaseHeaderTitleApp: UILabel {
         self.text = "🏛 GBShop by Kadyrov Ilya"
         self.translatesAutoresizingMaskIntoConstraints = false
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

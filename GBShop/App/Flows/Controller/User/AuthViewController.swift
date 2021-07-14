@@ -18,7 +18,7 @@ class AuthViewController: UIViewController {
         authView = viewFactory.makeAuthView()
         self.view = authView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButton()
@@ -26,15 +26,16 @@ class AuthViewController: UIViewController {
     }
 
     private func setupButton() {
-        self.authView?.contentView.loginButton.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
+        self.authView?.contentView
+            .loginButton.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
     }
-    
+
     @objc func loginButtonAction() {
         let loginText = self.authView?.contentView.loginTextField.text ?? ""
         let passwordText = self.authView?.contentView.passwordTextField.text ?? ""
         self.presenter.startSendLoginRequest(login: loginText, password: passwordText)
     }
-    
+
     init(presenter: AuthViewToPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -48,7 +49,5 @@ class AuthViewController: UIViewController {
 }
 
 extension AuthViewController: AuthPresenterToViewProtocol {
-   
-    
-    
+
 }

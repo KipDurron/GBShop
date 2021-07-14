@@ -7,15 +7,14 @@
 import UIKit
 
 class AuthRouter: AuthPresenterToRouterProtocol {
-    
+
     internal weak var controller: UIViewController?
     internal let flowFactory = FlowFactory()
-    
-    
+
     func setController(controller: UIViewController) {
         self.controller = controller
     }
-    
+
     func moveToUserAccountView() {
         let userAccountViewController = flowFactory.makeUserAccountFlow()
         let navigateController = UINavigationController(rootViewController: userAccountViewController)

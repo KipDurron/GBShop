@@ -23,57 +23,57 @@ class UserAccountView: UIView {
         passwordTextField.isEnabled = false
         return passwordTextField
     }()
-    
+
     var emailTextField: BaseTextField = {
         let emailTextField = BaseTextField(placeholder: "Email")
         emailTextField.text = emailTextField.placeholder
         emailTextField.isEnabled = false
         return emailTextField
     }()
-    
+
     var genderPickerView: UIPickerView = {
         let genderPickerView = UIPickerView()
         genderPickerView.translatesAutoresizingMaskIntoConstraints = false
         genderPickerView.isUserInteractionEnabled = false
         return genderPickerView
     }()
-    
+
     var creditCardTextField: BaseTextField = {
         let creditCardTextField = BaseTextField(placeholder: "Credit card")
         creditCardTextField.text = creditCardTextField.placeholder
         creditCardTextField.isEnabled = false
         return creditCardTextField
     }()
-    
+
     var bioTextField: BaseTextField = {
         let bioTextField = BaseTextField(placeholder: "BIO")
         bioTextField.text = bioTextField.placeholder
         bioTextField.isEnabled = false
         return bioTextField
     }()
-    
+
     var saveUserDataButton: BaseButton = {
         let saveUserDataButton = BaseButton(title: "Save user data")
         saveUserDataButton.isHidden = true
         return saveUserDataButton
     }()
-    
+
     var toProductsViewButton: BaseButton = {
         let toProductsViewButton = BaseButton(title: "To Products")
         return toProductsViewButton
     }()
-    
+
     var editDataBarButton: UIBarButtonItem = {
         let editDataBarButton = UIBarButtonItem()
         editDataBarButton.image = UIImage(systemName: "pencil")
         return editDataBarButton
     }()
-    
+
     init() {
         super.init(frame: .zero)
         self.setupContentView()
     }
-    
+
     private func setupLoginTextField() {
         self.addSubview(loginTextField)
         NSLayoutConstraint.activate([
@@ -81,7 +81,7 @@ class UserAccountView: UIView {
             loginTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             loginTextField.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 3/4)])
     }
-    
+
     private func setupPasswordTextField() {
         self.addSubview(passwordTextField)
         NSLayoutConstraint.activate([
@@ -91,7 +91,7 @@ class UserAccountView: UIView {
             passwordTextField.widthAnchor.constraint(equalTo: loginTextField.widthAnchor)
         ])
     }
-    
+
     private func setupEmaiTextField() {
         self.addSubview(emailTextField)
         NSLayoutConstraint.activate([
@@ -101,7 +101,7 @@ class UserAccountView: UIView {
             emailTextField.widthAnchor.constraint(equalTo: loginTextField.widthAnchor)
         ])
     }
-    
+
     private func setupGenderPickerView() {
         self.addSubview(genderPickerView)
         NSLayoutConstraint.activate([
@@ -112,7 +112,7 @@ class UserAccountView: UIView {
             genderPickerView.heightAnchor.constraint(equalTo: genderPickerView.widthAnchor, multiplier: 1/4)
         ])
     }
-    
+
     private func setupCreditCardTextField() {
         self.addSubview(creditCardTextField)
         NSLayoutConstraint.activate([
@@ -122,7 +122,7 @@ class UserAccountView: UIView {
             creditCardTextField.widthAnchor.constraint(equalTo: loginTextField.widthAnchor)
         ])
     }
-    
+
     private func setupBioTextField() {
         self.addSubview(bioTextField)
         NSLayoutConstraint.activate([
@@ -132,7 +132,7 @@ class UserAccountView: UIView {
             bioTextField.widthAnchor.constraint(equalTo: loginTextField.widthAnchor)
         ])
     }
-    
+
     private func setupSaveUserDataButton() {
         self.addSubview(saveUserDataButton)
         NSLayoutConstraint.activate([
@@ -142,7 +142,7 @@ class UserAccountView: UIView {
             saveUserDataButton.widthAnchor.constraint(equalTo: loginTextField.widthAnchor)
         ])
     }
-    
+
     private func setupToProductsViewButton() {
         self.addSubview(toProductsViewButton)
         NSLayoutConstraint.activate([
@@ -153,7 +153,7 @@ class UserAccountView: UIView {
             toProductsViewButton.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }
-    
+
     private func setupContentView() {
         setupLoginTextField()
         setupPasswordTextField()
