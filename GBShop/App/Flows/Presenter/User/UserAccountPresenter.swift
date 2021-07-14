@@ -8,7 +8,7 @@
 class UserAccountPresenter {
     
     private let interactor: UserAccountPresenterToInteractorProtocol
-    internal let router: UserAccountPresenterToRouterProtocol
+    private let router: UserAccountPresenterToRouterProtocol
     private weak var controller: UserAccountPresenterToViewProtocol?
     
     init(interactor: UserAccountPresenterToInteractorProtocol,

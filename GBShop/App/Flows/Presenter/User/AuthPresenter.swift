@@ -10,7 +10,7 @@
 class AuthPresenter {
     
     private let interactor: AuthPresenterToInteractorProtocol
-    var router: AuthPresenterToRouterProtocol
+    private let router: AuthPresenterToRouterProtocol
     private weak var controller: AuthPresenterToViewProtocol?
     
     init(interactor: AuthPresenterToInteractorProtocol,

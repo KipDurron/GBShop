@@ -9,10 +9,9 @@ import Foundation
 
 class UserAccountInteractor: UserAccountPresenterToInteractorProtocol {
     
-    let requestFactory = RequestFactory()
-    let serviceFactory = ServiceFactory()
-    
-    weak var presenter: UserAccountInteractorToPresenterProtocol?
+    private let requestFactory = RequestFactory()
+    private let serviceFactory = ServiceFactory()
+    private weak var presenter: UserAccountInteractorToPresenterProtocol?
     
     func setPresenter(presenter: UserAccountInteractorToPresenterProtocol) {
         self.presenter = presenter

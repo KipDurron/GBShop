@@ -10,7 +10,7 @@ import UIKit
 class UserAccountRouter: UserAccountPresenterToRouterProtocol {
     
     internal weak var controller: UIViewController?
-    let flowFactory = FlowFactory()
+    internal let flowFactory = FlowFactory()
     
     
     func setController(controller: UIViewController) {

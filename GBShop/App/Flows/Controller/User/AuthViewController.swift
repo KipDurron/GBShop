@@ -9,8 +9,8 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
-    let viewFactory = CustomViewFactory()
-    var authView: BaseViewWithScroll<AuthView>?
+    private let viewFactory = CustomViewFactory()
+    private var authView: BaseViewWithScroll<AuthView>?
     private let presenter: AuthViewToPresenterProtocol
 
     override func loadView() {

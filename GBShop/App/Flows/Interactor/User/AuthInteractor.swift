@@ -8,10 +8,10 @@ import Foundation
 
 class AuthInteractor: AuthPresenterToInteractorProtocol {
     
-    let requestFactory = RequestFactory()
-    let serviceFactory = ServiceFactory()
+    private let requestFactory = RequestFactory()
+    private let serviceFactory = ServiceFactory()
     
-    weak var presenter: AuthInteractorToPresenterProtocol?
+    private weak var presenter: AuthInteractorToPresenterProtocol?
     
     func setPresenter(presenter: AuthInteractorToPresenterProtocol) {
         self.presenter = presenter
