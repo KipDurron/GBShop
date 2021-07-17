@@ -8,27 +8,26 @@
 import UIKit
 
 class ProductCell: UITableViewCell {
-    
+
     let stackNamePrice: BaseHorizontalStackView = {
         let stackNamePrice = BaseHorizontalStackView()
         return stackNamePrice
     }()
-    
+
     let nameLabel: BaseLabel = {
         let nameLabel = BaseLabel()
         return nameLabel
     }()
-    
+
     let priceLabel: BaseLabel = {
         let priceLabel = BaseLabel()
         return priceLabel
     }()
-    
+
     let descriptionLabelArea: BaseLabelArea = {
         let descriptionLabelArea = BaseLabelArea()
         return descriptionLabelArea
     }()
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,17 +39,17 @@ class ProductCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configuration()
     }
-    
+
     private func configuration() {
         self.setupStackNameAndPrice()
         self.setupDescription()
     }
-  
+
     private func setupDescription() {
         self.addSubview(self.descriptionLabelArea)
         NSLayoutConstraint.activate([
@@ -60,7 +59,7 @@ class ProductCell: UITableViewCell {
             descriptionLabelArea.widthAnchor.constraint(equalTo: self.stackNamePrice.widthAnchor)
         ])
     }
-    
+
     private func setupStackNameAndPrice() {
         self.addSubview(self.stackNamePrice)
         stackNamePrice.addArrangedSubview(self.nameLabel)
@@ -72,9 +71,9 @@ class ProductCell: UITableViewCell {
             stackNamePrice.widthAnchor.constraint(equalTo: self.widthAnchor)
         ])
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 }

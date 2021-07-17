@@ -17,9 +17,9 @@ class BaseHorizontalStackView: UIStackView {
         self.spacing = MarginSettingsEnum.intoHorizontalStack.rawValue
         self.translatesAutoresizingMaskIntoConstraints = false
     }
-    
+
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 }

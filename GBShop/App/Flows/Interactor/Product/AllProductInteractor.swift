@@ -23,11 +23,11 @@ class AllProductInteractor: AllProductPresenterToInteractorProtocol {
                 switch response.result {
                 case .success(let result):
                     self?.presenter?.getAllProductSuccess(products: result.products)
-                    
+
                 case .failure(let error):
-                    
+
                     self?.presenter?.startShowMessage(text: "\(error)", messageType: .error)
-                    
+
                 }
             }
         }

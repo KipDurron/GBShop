@@ -42,12 +42,12 @@ class UserAccountViewController: UIViewController {
         self.userAccountView?.contentView
             .saveUserDataButton
             .addTarget(self,action: #selector(saveUserDataButtonAction),for: .touchUpInside)
-        
+
         self.userAccountView?.contentView
             .toProductsViewButton
             .addTarget(self, action: #selector(toProductsViewButtonAction), for: .touchUpInside)
     }
-    
+
     @objc func  toProductsViewButtonAction() {
         self.presenter.startMoveToAllProductsView()
     }

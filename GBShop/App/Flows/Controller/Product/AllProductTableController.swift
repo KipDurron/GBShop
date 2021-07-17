@@ -8,9 +8,9 @@
 import UIKit
 
 class AllProductTableController: UIViewController {
-    
+
     private let reuseIdentifier = "AllProductCell"
-    
+
     private let presenter: AllProductViewToPresenterProtocol
     private let tableView = UITableView()
     private var allProducts = [Product]()
@@ -20,7 +20,7 @@ class AllProductTableController: UIViewController {
         self.presenter.startGetAllProduct()
 
     }
-    
+
     override func loadView() {
         super.loadView()
         self.view = self.tableView
@@ -28,7 +28,7 @@ class AllProductTableController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.register(ProductCell.self, forCellReuseIdentifier: reuseIdentifier)
     }
-    
+
     init(presenter: AllProductViewToPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -38,27 +38,28 @@ class AllProductTableController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-
 }
 
 extension AllProductTableController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.allProducts.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ProductCell
+        let cell: ProductCell = tableView
+            .dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+            as? ProductCell ?? ProductCell(style: .default, reuseIdentifier: reuseIdentifier)
         let currentProduct = self.allProducts[indexPath.row]
         cell.nameLabel.text = currentProduct.name
         cell.priceLabel.text = String(currentProduct.price)
         cell.descriptionLabelArea.text = currentProduct.description
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return MarginSettingsEnum.heightCell.rawValue
     }
-    
+
 }
 
 extension AllProductTableController: AllProductPresenterToViewProtocol {
@@ -66,6 +67,5 @@ extension AllProductTableController: AllProductPresenterToViewProtocol {
         self.allProducts = products
         self.tableView.reloadData()
     }
-    
-    
+
 }

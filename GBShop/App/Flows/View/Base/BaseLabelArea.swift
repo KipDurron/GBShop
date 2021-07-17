@@ -14,17 +14,17 @@ class BaseLabelArea: UILabel {
         self.text = text
         configuration()
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configuration()
     }
-    
+
     private func configuration() {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.numberOfLines = 0
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
