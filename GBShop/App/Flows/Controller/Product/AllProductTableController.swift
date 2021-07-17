@@ -27,6 +27,8 @@ class AllProductTableController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(ProductCell.self, forCellReuseIdentifier: reuseIdentifier)
+        self.view.backgroundColor = .yellow
+        self.title = "All products"
     }
 
     init(presenter: AllProductViewToPresenterProtocol) {

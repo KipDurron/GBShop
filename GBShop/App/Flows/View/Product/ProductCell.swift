@@ -48,6 +48,7 @@ class ProductCell: UITableViewCell {
     private func configuration() {
         self.setupStackNameAndPrice()
         self.setupDescription()
+        self.backgroundColor = .white
     }
 
     private func setupDescription() {
