@@ -69,7 +69,7 @@ class ProductCell: UITableViewCell {
             stackNamePrice.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             stackNamePrice.topAnchor.constraint(equalTo: self.topAnchor,
                                          constant:MarginSettingsEnum.baseTopAnchor.rawValue),
-            stackNamePrice.widthAnchor.constraint(equalTo: self.widthAnchor)
+            stackNamePrice.widthAnchor.constraint(equalTo: self.safeAreaLayoutGuide.widthAnchor)
         ])
     }
 
