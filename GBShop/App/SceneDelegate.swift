@@ -17,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = FirstViewController(requestFactory: RequestFactory()) // Your initial view controller.
+        let authViewController = FlowFactory().makeAuthFlow()
+        window.rootViewController =  UINavigationController(rootViewController: authViewController)
         window.makeKeyAndVisible()
         self.window = window
     }
