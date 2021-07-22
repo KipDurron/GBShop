@@ -47,7 +47,7 @@ class AuthView: UIView {
     private func setupTitleLabel() {
         self.addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 3/4)
         ])

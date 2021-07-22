@@ -46,7 +46,7 @@ class BaseViewWithScroll<ContentType: UIView>: UIView {
         ])
         setupKeyBoard()
     }
-    
+
     @objc func keyboardWillShow(notification: Notification) {
         guard let kbSize = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
         self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: kbSize.height, right: 0)
@@ -55,12 +55,12 @@ class BaseViewWithScroll<ContentType: UIView>: UIView {
      @objc func keyboardWillHide(notification: Notification) {
         self.scrollView.contentInset = .zero
      }
-    
+
     private func setupKeyBoard() {
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         self.scrollView.addGestureRecognizer(hideKeyboardGesture)
     }
-    
+
     @objc func hideKeyboard() {
         self.scrollView.endEditing(true)
     }
