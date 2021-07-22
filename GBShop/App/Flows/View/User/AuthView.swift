@@ -18,16 +18,19 @@ class AuthView: UIView {
 
     var loginTextField: BaseTextField = {
         let loginTextField = BaseTextField(placeholder: "Login")
+        loginTextField.accessibilityIdentifier = "login"
         return loginTextField
     }()
 
     var passwordTextField: BaseTextField = {
         let passwordTextField =  BaseTextField(placeholder: "Password")
+        passwordTextField.accessibilityIdentifier = "password"
         return passwordTextField
     }()
 
     var loginButton: BaseButton = {
         let loginButton = BaseButton(title: "Log in")
+        loginButton.accessibilityIdentifier = "loginButton"
         return loginButton
     }()
 
