@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAnalytics
 
 class ProductService {
-    
+
     func logEventGetAllProduct(success: Bool, content: String?) {
         Analytics.logEvent(CustomAnalyticsEvent.getAllProduct.rawValue,
                            parameters:  [

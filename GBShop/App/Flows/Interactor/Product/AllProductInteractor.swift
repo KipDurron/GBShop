@@ -30,7 +30,7 @@ class AllProductInteractor: AllProductPresenterToInteractorProtocol {
                 case .failure(let error):
                     self?.presenter?.startShowMessage(text: "\(error)", messageType: .error)
                     productFactory.logEventGetAllProduct(success: false, content: "Server error")
-                    
+
                 }
             }
         }

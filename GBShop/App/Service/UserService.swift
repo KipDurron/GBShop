@@ -38,7 +38,7 @@ class UserService {
             return false
         }
     }
-    
+
     func logEventLogin(success: Bool, content: String?) {
         Analytics.logEvent(AnalyticsEventLogin,
                            parameters:  [
@@ -46,7 +46,7 @@ class UserService {
                             AnalyticsParameterContent: content ?? ""
                           ])
     }
-    
+
     func logEventChangeData(success: Bool, content: String?) {
         Analytics.logEvent(CustomAnalyticsEvent.ghangeUserData.rawValue,
                            parameters:  [
