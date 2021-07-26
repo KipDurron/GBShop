@@ -16,4 +16,9 @@ class UserAccountRouter: UserAccountPresenterToRouterProtocol {
         self.controller = controller
     }
 
+    func moveToAllProductsView() {
+        let allProductController = flowFactory.makeAllProductFlow()
+        self.controller?.navigationController?.pushViewController(allProductController, animated: true)
+    }
+
 }
