@@ -32,6 +32,8 @@
 		EC1844A126877CDD00E8A027 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A026877CDD00E8A027 /* Product.swift */; };
 		EC1844A32687869400E8A027 /* ProductRequestFactoryRealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A22687869400E8A027 /* ProductRequestFactoryRealise.swift */; };
 		EC1844A52687967400E8A027 /* ConcreteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1844A42687967400E8A027 /* ConcreteProduct.swift */; };
+		EC2B4A4F26A95471001E3DBA /* UserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B4A4E26A95470001E3DBA /* UserUITests.swift */; };
+		EC2B4A5126A9572A001E3DBA /* UserServiceUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B4A5026A9572A001E3DBA /* UserServiceUITest.swift */; };
 		EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45277E268E551400AA9A47 /* ServerPath.swift */; };
 		EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DB268B88FA00EEB88B /* StandartResponse.swift */; };
 		EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */; };
@@ -80,7 +82,6 @@
 		ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F62E267CF16E00359582 /* Assets.xcassets */; };
 		ECF8F632267CF16E00359582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F630267CF16E00359582 /* LaunchScreen.storyboard */; };
 		ECF8F63D267CF16E00359582 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F63C267CF16E00359582 /* UserTests.swift */; };
-		ECF8F648267CF16E00359582 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8F647267CF16E00359582 /* GBShopUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		EC1844A026877CDD00E8A027 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EC1844A22687869400E8A027 /* ProductRequestFactoryRealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestFactoryRealise.swift; sourceTree = "<group>"; };
 		EC1844A42687967400E8A027 /* ConcreteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteProduct.swift; sourceTree = "<group>"; };
+		EC2B4A4E26A95470001E3DBA /* UserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUITests.swift; sourceTree = "<group>"; };
+		EC2B4A5026A9572A001E3DBA /* UserServiceUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceUITest.swift; sourceTree = "<group>"; };
 		EC45277E268E551400AA9A47 /* ServerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPath.swift; sourceTree = "<group>"; };
 		EC6190DB268B88FA00EEB88B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
 		EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUserInfo.swift; sourceTree = "<group>"; };
@@ -185,7 +188,6 @@
 		ECF8F63C267CF16E00359582 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		ECF8F63E267CF16E00359582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF8F643267CF16E00359582 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECF8F647267CF16E00359582 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		ECF8F649267CF16E00359582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -687,8 +689,9 @@
 		ECF8F646267CF16E00359582 /* GBShopUITests */ = {
 			isa = PBXGroup;
 			children = (
-				ECF8F647267CF16E00359582 /* GBShopUITests.swift */,
 				ECF8F649267CF16E00359582 /* Info.plist */,
+				EC2B4A4E26A95470001E3DBA /* UserUITests.swift */,
+				EC2B4A5026A9572A001E3DBA /* UserServiceUITest.swift */,
 			);
 			path = GBShopUITests;
 			sourceTree = "<group>";
@@ -1031,7 +1034,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF8F648267CF16E00359582 /* GBShopUITests.swift in Sources */,
+				EC2B4A5126A9572A001E3DBA /* UserServiceUITest.swift in Sources */,
+				EC2B4A4F26A95471001E3DBA /* UserUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

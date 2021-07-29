@@ -18,16 +18,19 @@ class AuthView: UIView {
 
     var loginTextField: BaseTextField = {
         let loginTextField = BaseTextField(placeholder: "Login")
+        loginTextField.accessibilityIdentifier = "login"
         return loginTextField
     }()
 
     var passwordTextField: BaseTextField = {
         let passwordTextField =  BaseTextField(placeholder: "Password")
+        passwordTextField.accessibilityIdentifier = "password"
         return passwordTextField
     }()
 
     var loginButton: BaseButton = {
         let loginButton = BaseButton(title: "Log in")
+        loginButton.accessibilityIdentifier = "loginButton"
         return loginButton
     }()
 
@@ -44,7 +47,7 @@ class AuthView: UIView {
     private func setupTitleLabel() {
         self.addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 3/4)
         ])
