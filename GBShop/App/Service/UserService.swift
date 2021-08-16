@@ -4,6 +4,7 @@
 //
 //  Created by Илья Кадыров on 14.07.2021.
 //
+import FirebaseAnalytics
 
 class UserService {
 
@@ -36,5 +37,21 @@ class UserService {
         } else {
             return false
         }
+    }
+
+    func logEventLogin(success: Bool, content: String?) {
+        Analytics.logEvent(AnalyticsEventLogin,
+                           parameters:  [
+                            AnalyticsParameterSuccess: success,
+                            AnalyticsParameterContent: content ?? ""
+                          ])
+    }
+
+    func logEventChangeData(success: Bool, content: String?) {
+        Analytics.logEvent(CustomAnalyticsEvent.ghangeUserData.rawValue,
+                           parameters:  [
+                            AnalyticsParameterSuccess: success,
+                            AnalyticsParameterContent: content ?? ""
+                          ])
     }
 }

@@ -35,6 +35,11 @@
 		EC2B4A4F26A95471001E3DBA /* UserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B4A4E26A95470001E3DBA /* UserUITests.swift */; };
 		EC2B4A5126A9572A001E3DBA /* UserServiceUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B4A5026A9572A001E3DBA /* UserServiceUITest.swift */; };
 		EC45277F268E551400AA9A47 /* ServerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45277E268E551400AA9A47 /* ServerPath.swift */; };
+		EC5842A826AE8ED300466595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5842A726AE8ED300466595 /* GoogleService-Info.plist */; };
+		EC5842A926AEA12600466595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5842A726AE8ED300466595 /* GoogleService-Info.plist */; };
+		EC5842AA26AEA12700466595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5842A726AE8ED300466595 /* GoogleService-Info.plist */; };
+		EC5842AD26AEDC3200466595 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5842AC26AEDC3200466595 /* ProductService.swift */; };
+		EC5842AF26AEDDEF00466595 /* CustomAnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5842AE26AEDDEF00466595 /* CustomAnalyticsEvent.swift */; };
 		EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DB268B88FA00EEB88B /* StandartResponse.swift */; };
 		EC6190DE268BA5D400EEB88B /* ExtraUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */; };
 		EC6954FF269EBC6B00AE1480 /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6954FE269EBC6B00AE1480 /* UserAccountView.swift */; };
@@ -136,6 +141,9 @@
 		EC2B4A4E26A95470001E3DBA /* UserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUITests.swift; sourceTree = "<group>"; };
 		EC2B4A5026A9572A001E3DBA /* UserServiceUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceUITest.swift; sourceTree = "<group>"; };
 		EC45277E268E551400AA9A47 /* ServerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPath.swift; sourceTree = "<group>"; };
+		EC5842A726AE8ED300466595 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC5842AC26AEDC3200466595 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		EC5842AE26AEDDEF00466595 /* CustomAnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnalyticsEvent.swift; sourceTree = "<group>"; };
 		EC6190DB268B88FA00EEB88B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
 		EC6190DD268BA5D400EEB88B /* ExtraUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUserInfo.swift; sourceTree = "<group>"; };
 		EC6954FE269EBC6B00AE1480 /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
@@ -291,6 +299,7 @@
 				EC45277E268E551400AA9A47 /* ServerPath.swift */,
 				EC695500269EC3AD00AE1480 /* GenderPickerSetting.swift */,
 				EC695515269F25FA00AE1480 /* MessageTypeEnum.swift */,
+				EC5842AE26AEDDEF00466595 /* CustomAnalyticsEvent.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -317,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				EC695519269F2B4200AE1480 /* UserService.swift */,
+				EC5842AC26AEDC3200466595 /* ProductService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -665,6 +675,7 @@
 		ECF8F624267CF16D00359582 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
+				EC5842A726AE8ED300466595 /* GoogleService-Info.plist */,
 				EC846529267D0C7300640FFF /* Environments */,
 				EC846528267D0C6700640FFF /* Resources */,
 				EC846527267D0C5D00640FFF /* Core */,
@@ -708,7 +719,8 @@
 				ECF8F61F267CF16D00359582 /* Frameworks */,
 				ECF8F620267CF16D00359582 /* Resources */,
 				9D9F35D07C2AB65B331BE8C9 /* [CP] Embed Pods Frameworks */,
-				EC10760C2691A32B00EFB298 /* ShellScript */,
+				EC10760C2691A32B00EFB298 /* Run Script SwiftLint */,
+				EC5842AB26AEA30500466595 /* Run Script FireBase */,
 			);
 			buildRules = (
 			);
@@ -807,6 +819,7 @@
 			files = (
 				ECF8F632267CF16E00359582 /* LaunchScreen.storyboard in Resources */,
 				ECF8F62F267CF16E00359582 /* Assets.xcassets in Resources */,
+				EC5842A826AE8ED300466595 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +827,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5842A926AEA12600466595 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,6 +835,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5842AA26AEA12700466595 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,7 +942,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBShop/Pods-GBShop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC10760C2691A32B00EFB298 /* ShellScript */ = {
+		EC10760C2691A32B00EFB298 /* Run Script SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 12;
@@ -937,13 +952,34 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script SwiftLint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		EC5842AB26AEA30500466595 /* Run Script FireBase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Run Script FireBase";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -971,6 +1007,7 @@
 				ECB7C080268F26110047153C /* GetAllProductResponse.swift in Sources */,
 				ECF8F626267CF16D00359582 /* AppDelegate.swift in Sources */,
 				EC1844A52687967400E8A027 /* ConcreteProduct.swift in Sources */,
+				EC5842AF26AEDDEF00466595 /* CustomAnalyticsEvent.swift in Sources */,
 				EC69551D269F2E1700AE1480 /* ServiceFactory.swift in Sources */,
 				ECADF7E9269D83EB0047EE03 /* MarginSettingsEnum.swift in Sources */,
 				EC09653D2683CB0E0042793C /* UserRequestFactory.swift in Sources */,
@@ -985,6 +1022,7 @@
 				EC10761626923EFE00EFB298 /* ReviewRequestFactory.swift in Sources */,
 				EC0965382683CA9A0042793C /* LoginResponse.swift in Sources */,
 				EC695516269F25FA00AE1480 /* MessageTypeEnum.swift in Sources */,
+				EC5842AD26AEDC3200466595 /* ProductService.swift in Sources */,
 				EC6190DC268B88FA00EEB88B /* StandartResponse.swift in Sources */,
 				EC09653F2683CBD10042793C /* UserRequestFactoryRealise.swift in Sources */,
 				EC695501269EC3AD00AE1480 /* GenderPickerSetting.swift in Sources */,
@@ -1191,6 +1229,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = R95MV6BG28;
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
