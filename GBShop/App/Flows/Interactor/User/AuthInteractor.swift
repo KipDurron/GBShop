@@ -5,6 +5,7 @@
 //  Created by Илья Кадыров on 13.07.2021.
 //
 import Foundation
+import FirebaseAnalytics
 
 class AuthInteractor: AuthPresenterToInteractorProtocol {
 
@@ -19,10 +20,12 @@ class AuthInteractor: AuthPresenterToInteractorProtocol {
 
     func sendLoginRequest(login: String, password: String) {
 
-        let authDataIsEmpty = serviceFactory.makeUserService().authDataIsEmpty(login: login, password: password)
+        let userFactory = serviceFactory.makeUserService()
+        let authDataIsEmpty = userFactory.authDataIsEmpty(login: login, password: password)
 
         guard !authDataIsEmpty else {
             self.presenter?.startShowMessage(text: "login or password is empty", messageType: .error)
+            userFactory.logEventLogin(success: false, content: "login or password is empty")
             return
         }
 
@@ -33,10 +36,10 @@ class AuthInteractor: AuthPresenterToInteractorProtocol {
                 switch response.result {
                 case .success(_):
                     self?.presenter?.startMoveToUserAccountView()
+                    userFactory.logEventLogin(success: true, content: nil)
                 case .failure(let error):
-
                     self?.presenter?.startShowMessage(text: "\(error)", messageType: .error)
-
+                    userFactory.logEventLogin(success: false, content: "Bad URL or server error")
                 }
             }
         }

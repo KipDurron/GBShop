@@ -11,7 +11,7 @@ class AuthView: UIView {
 
     let titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.text = "🏛 GBShop by Kadyrov Ilya"
+        titleLabel.text = "🏛 GBShop by KipDurron"
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         return titleLabel
     }()

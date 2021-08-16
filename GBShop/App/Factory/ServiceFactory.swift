@@ -9,4 +9,8 @@ class ServiceFactory {
     func makeUserService() -> UserService {
         return UserService()
     }
+
+    func makeProductService() -> ProductService {
+        return ProductService()
+    }
 }

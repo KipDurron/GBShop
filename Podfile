@@ -7,6 +7,8 @@ target 'GBShop' do
 
   # Pods for GBShop
   pod 'Alamofire', '~> 5.4'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
 
 
   target 'GBShopTests' do
